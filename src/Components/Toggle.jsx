@@ -1,27 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Toggle = () => {
- 
+    const [active , setActive]=useState(1)
+    
+
+    
   return (
     <>
       <section class="button-toggle-section shadow rounded p-5 space-x-4 mt-2 sm:mt-6">
         <button
-          
-          class="btn btn-primary w-[80px]"
+          onClick={()=> setActive(1)}
+          class={active ===1 ? ' w-[80px] btn btn-primary':'btn w-[80px] '}
           id="all-filter-btn"
         >
           All
         </button>
         <button
-          
-          class="btn  w-[80px]"
+            onClick={()=> setActive(2)}
+          class={active ===2 ? ' w-[80px]  btn btn-primary':'btn w-[80px]'}
           id="open-filter-btn"
         >
           Open
         </button>
         <button
-   
-          class="btn"
+       onClick={()=> setActive(3)}
+          class={active ===3 ? ' btn btn-primary':'btn'}
           id="close-filter-btn"
         >
           Closed
