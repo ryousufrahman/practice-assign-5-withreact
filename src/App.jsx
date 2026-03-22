@@ -7,6 +7,8 @@ import LoadingProblem from './Components/LoadingProblem'
 
 const problemFetch = fetch('https://phi-lab-server.vercel.app/api/v1/lab/issues').then(res =>res.json())
 
+
+
 function App() {
  return (
     <>
@@ -15,7 +17,7 @@ function App() {
     </header>
     <main className='max-w-[1200px] mx-auto'>
       <section>
-         <Toggle></Toggle>
+         <Toggle problemFetch ={problemFetch}></Toggle>
       </section>
       <section>
         <StatusCount></StatusCount>

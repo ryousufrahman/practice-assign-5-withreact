@@ -3,12 +3,12 @@ import close from "../assets/images/Closed- Status .png";
 import open from "../assets/images/Open-Status.png";
 import LebelsLoad from "./LebelsLoad";
 
-const DisplayProblem = ({ problem }) => {
-  console.log(problem);
+const DisplayProblem = ({ problem  }) => {
+ 
   const date = new Date(problem.createdAt);
      const formattedDate = date.toLocaleDateString();
      const labels = problem.labels;
-     console.log(labels);
+     
      
 
   return (
