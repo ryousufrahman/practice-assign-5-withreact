@@ -20,7 +20,7 @@ function App() {
       <section>
         <StatusCount></StatusCount>
       </section>
-      <section className='mt-5 '>
+      <section className='mt-5 mb-3 '>
         <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
              <LoadingProblem problemFetch={problemFetch}></LoadingProblem>
 

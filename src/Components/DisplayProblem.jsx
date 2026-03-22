@@ -1,11 +1,15 @@
 import React from "react";
 import close from "../assets/images/Closed- Status .png";
 import open from "../assets/images/Open-Status.png";
+import LebelsLoad from "./LebelsLoad";
 
 const DisplayProblem = ({ problem }) => {
   console.log(problem);
   const date = new Date(problem.createdAt);
      const formattedDate = date.toLocaleDateString();
+     const labels = problem.labels;
+     console.log(labels);
+     
 
   return (
     <>
@@ -21,7 +25,10 @@ const DisplayProblem = ({ problem }) => {
         <div className="title-body mb-3">
             <h2 className="font-bold mt-2">{problem.title}</h2>
             <p className="text-gray-500 line-clamp-2 mt-2">{problem.description}</p>
-            <div className="problem-name-span mb-4">
+            <div className="problem-name-span mb-4 mt-2 flex  gap-2 flex-wrap">
+               {
+                  labels.map( (label , index) => <LebelsLoad key={index} label={label}></LebelsLoad>  )
+               }
 
             </div>
         </div>
