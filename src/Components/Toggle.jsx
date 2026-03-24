@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LoadingProblem from "./LoadingProblem";
-const Toggle = () => {
-  const [active, setActive] = useState(1);
+const Toggle = ({active , setActive}) => {
+ 
   
    
   
