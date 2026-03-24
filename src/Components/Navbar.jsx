@@ -18,6 +18,7 @@ const Navbar = () => {
             <input
               type="search"
               placeholder=" Search issues..."
+              
               className="input input-bordered w-24 md:w-auto"
               id="input-search"
             />

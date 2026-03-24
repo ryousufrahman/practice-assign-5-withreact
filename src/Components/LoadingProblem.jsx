@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import DisplayProblem from './DisplayProblem';
 import Toggle from './Toggle';
 
-const LoadingProblem = ({problemFetch , active }) => {
+const LoadingProblem = ({problemFetch , active  }) => {
     const problemUse =use(problemFetch);
     const problemData = problemUse.data;
     console.log(problemData);
@@ -25,6 +25,7 @@ const LoadingProblem = ({problemFetch , active }) => {
           {
            active ==1 ? problemData.map(problem => <DisplayProblem key={problem.id} problem={problem} ></DisplayProblem>): active ==2 ? openProblem.map(problem => <DisplayProblem key={problem.id} problem={problem} ></DisplayProblem>) : closeProblem.map(problem => <DisplayProblem key={problem.id} problem={problem} ></DisplayProblem>)
           }
+         
         </div>
        </>
     );

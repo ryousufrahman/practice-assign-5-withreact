@@ -11,7 +11,7 @@ const StatusCount = () => {
                 <img src={Apetures} alt="" className="w-[50px] h-[50px]"></img>
               </div>
               <div>
-                <h2 className="text-xl font-bold"><span id="count-in-heading">0</span> Issues</h2>
+                <h2 className="text-xl font-bold"><span id="count-in-heading"></span> Issues</h2>
                 <p className="text-[#64748B]">Track and manage your project issues</p>
               </div>
            </div>
