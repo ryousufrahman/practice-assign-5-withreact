@@ -25,7 +25,7 @@ function App() {
       </section>
       <section className='mt-5 mb-3 '>
         <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-             <LoadingProblem problemFetch={problemFetch} active={active} setActive={setActive}></LoadingProblem>
+             <LoadingProblem problemFetch={problemFetch} active={active} ></LoadingProblem>
 
         </Suspense>
       </section>

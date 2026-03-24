@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import DisplayProblem from './DisplayProblem';
 import Toggle from './Toggle';
 
-const LoadingProblem = ({problemFetch , active , setActive}) => {
+const LoadingProblem = ({problemFetch , active }) => {
     const problemUse =use(problemFetch);
     const problemData = problemUse.data;
     console.log(problemData);
