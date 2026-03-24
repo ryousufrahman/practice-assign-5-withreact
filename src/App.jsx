@@ -25,7 +25,7 @@ function App() {
         <StatusCount ></StatusCount>
       </section>
       <section className='mt-5 mb-3 '>
-        <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+        <Suspense fallback={<div className='flex justify-center items-center '><span className="loading loading-bars loading-xl"></span>  </div>}>
              <LoadingProblem problemFetch={problemFetch} active={active}  ></LoadingProblem>
 
         </Suspense>

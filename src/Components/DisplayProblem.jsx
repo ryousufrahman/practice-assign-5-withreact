@@ -3,6 +3,7 @@ import close from "../assets/images/Closed- Status .png";
 import open from "../assets/images/Open-Status.png";
 import LebelsLoad from "./LebelsLoad";
 
+
 const DisplayProblem = ({ problem  }) => {
  
   const date = new Date(problem.createdAt);
@@ -33,9 +34,13 @@ const DisplayProblem = ({ problem  }) => {
             </div>
         </div>
         <hr />
-        <div className="mt-4">
-           <p className="text-gray-500">by {problem.author}</p>
-           <p className="text-gray-500">{formattedDate}</p>
+        <div className="mt-4 flex justify-between">
+           <div>
+             <p className="text-gray-500">by {problem.author}</p>
+             <p className="text-gray-500">{formattedDate}</p>
+
+           </div>
+           <button className="btn btn-soft btn-primary">Details</button>
         </div>
       </div>
     </>
