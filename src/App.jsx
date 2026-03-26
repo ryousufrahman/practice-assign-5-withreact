@@ -1,7 +1,6 @@
 import { Suspense, useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
-import StatusCount from './Components/StatusCount'
 import Toggle from './Components/Toggle'
 import LoadingProblem from './Components/LoadingProblem'
 
@@ -21,9 +20,7 @@ function App() {
       <section>
          <Toggle active={active} setActive ={setActive}></Toggle>
       </section>
-      <section>
-        <StatusCount ></StatusCount>
-      </section>
+      
       <section className='mt-5 mb-3 '>
         <Suspense fallback={<div className='flex justify-center items-center '><span className="loading loading-bars loading-xl"></span>  </div>}>
              <LoadingProblem problemFetch={problemFetch} active={active}  ></LoadingProblem>
